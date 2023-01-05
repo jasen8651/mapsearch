@@ -56,14 +56,6 @@
 			<div id="pagination"></div>
 		</div>
 	</div>
-		<div id="menu_wrap2" style="display:block;margin:0 auto; width: 60%; height: 30%;"  class="bg_white">
-			<div class="option">
-				<form onsubmit="searchPlaces2(); return false">
-				<span>지역명:</span> <input type="text" value=" ex) 서울" id="keyword"
-						size="15" />
-					<button type="submit">검색하기</button>
-					</form>
-		</div>	
-	
+
 </body>
 </html>

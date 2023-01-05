@@ -9,26 +9,19 @@
 	color: #000;
 	text-decoration: none;
 }
-
 .div.logo {
-	width: 280px;
-	height: 140px;
-	float: left;
+  width: 280px;
+  height: 140px;
+  float: left;
 }
 
 .img#logo_img {
-	width: 200px;
-	height: 140px;
+  width: 200px;
+  height: 140px;
 }
-
 .map_wrap {
 	position: relative;
-	width: 100%;
-	height: 500px;
-}
-
-.map_wrap {
-	position: relative;
+	
 	width: 100%;
 	height: 500px;
 }
@@ -36,7 +29,7 @@
 #menu_wrap {
 	position: absolute;
 	top: 0;
-	left: 20%;
+	left : 20%;
 	bottom: 0;
 	width: 250px;
 	margin: 10px 0 30px 10px;
@@ -69,40 +62,6 @@
 }
 
 #menu_wrap .option button {
-	margin-left: 5px;
-}
-
-#menu_wrap2 {
-	position: absolute;
-	bottom :10px;
-	left : 50px;
-	width : 500%
-	margin: 10px 0 30px 10px;
-	padding: 5px;
-	overflow-y: auto;
-	background: rgba(255, 255, 255, 0.7);
-	z-index: 1;
-	font-size: 12px;
-	border-radius: 10px;
-}
-
-#menu_wrap2 hr {
-	display: block;
-	height: 1px;
-	border: 0;
-	border-top: 2px solid #5F5F5F;
-	margin: 3px 0;
-}
-
-#menu_wrap2 .option {
-	text-align: center;
-}
-
-#menu_wrap2 .option p {
-	margin: 10px 0;
-}
-
-#menu_wrap2 .option button {
 	margin-left: 5px;
 }
 
@@ -147,7 +106,6 @@
 #placesList .info .tel {
 	color: #009900;
 }
-
 #placesList .info .tel {
 	color: #009900;
 }
@@ -256,7 +214,7 @@ html, body {
 	position: absolute;
 	top: 10px;
 	right: 10px;
-	right: 20%;
+	right : 20%;
 	overflow: hidden;
 	width: 130px;
 	height: 30px;
@@ -306,7 +264,7 @@ html, body {
 	position: absolute;
 	top: 50px;
 	right: 10px;
-	right: 20%;
+	right : 20%;
 	width: 36px;
 	height: 80px;
 	overflow: hidden;

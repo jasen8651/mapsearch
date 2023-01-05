@@ -131,11 +131,6 @@ function displayPlaces(search) {
 	var listEl = document.getElementById('placesList'), menuEl = document
 			.getElementById('menu_wrap'), fragment = document
 			.createDocumentFragment(), bounds = new daum.maps.LatLngBounds(), listStr = '';
-	
-	var listEl = document.getElementById('placesList'), menuEl = document
-			.getElementById('menu_wrap2'), fragment = document
-			.createDocumentFragment(), bounds = new daum.maps.LatLngBounds(), listStr = '';		
-			
 
 	// 검색 결과 목록에 추가된 항목들을 제거합니다
 	removeAllChildNods(listEl);
