@@ -132,11 +132,8 @@ function displayPlaces(search) {
 			.getElementById('menu_wrap'), fragment = document
 			.createDocumentFragment(), bounds = new daum.maps.LatLngBounds(), listStr = '';
 	
-	var listEl = document.getElementById('placesList'), menuEl = document
-			.getElementById('menu_wrap2'), fragment = document
-			.createDocumentFragment(), bounds = new daum.maps.LatLngBounds(), listStr = '';		
-			
-
+	
+	
 	// 검색 결과 목록에 추가된 항목들을 제거합니다
 	removeAllChildNods(listEl);
 
@@ -149,6 +146,7 @@ function displayPlaces(search) {
 				search[i].latitude,
 				search[i].longitude), marker = addMarker(
 				placePosition, i), itemEl = getListItem(i, search[i], marker); // 검색
+				
 		// 결과
 		// 항목
 		// Element를
@@ -222,7 +220,7 @@ function getListItem(index, search, marker) {
 	itemStr += '<span class="tel">' +search.foodcategory + '</span>'
 
 			
-	itemStr += '<span class="typ">' +search.foodtype + '</span>'
+	itemStr += '<span class="typ">' +search.foodstroe_num + '</span>'
 			+ '</div>';
 	
 	el.innerHTML = itemStr;
@@ -297,14 +295,16 @@ function displayPagination(totalPage, total, blocksize, pageNo) {
 
 }
 
+
 // 검색결과 목록 또는 마커를 클릭했을 때 호출되는 함수입니다
 // 인포윈도우에 장소명을 표시합니다
 function displayInfowindow(marker, title, searchs) {
 
 	
-	var content = '<div class ="f_main"><div id="f_image">' + searchs.foodstore_id + '</div>'
-			+ '<div class="f_header">' + searchs.foodcategory
-			+ '</div>' + '<div id="f_date">' + searchs.area
+	var content = '<div class ="f_main"><div id="f_date">' + '<img src =' + `${searchs.img_url}` +' enctype="multipart/form-data" width=50>' +'</div>'
+			+ '<div class="f_header">' + searchs.foodstore_id
+			+ '</div>' + '<div id="f_date">' + searchs.foodcategory
+			+ '</div>' + '<div id="f_date">' + searchs.foodstroe_num
 			+ '</div>' + '<div id="f_number">'
 			+ searchs.address + '</div></div>'; 
 

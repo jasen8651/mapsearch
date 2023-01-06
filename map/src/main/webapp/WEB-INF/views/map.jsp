@@ -16,16 +16,20 @@
 <body>
 
 	<div class="pbx top1">
-		 <img src="resources/img/logo.png"/>
+		<img src="resources/img/logo.png" />
 	</div>
 		
-	
-	</br>
-	</br>
-	
-	<div class="map_wrap">
+		<div id="option" >
+				<form onsubmit="searchPlaces(); return false">
+					<span>검색:</span> <input type="text" value="강남구" id="keyword"
+						size="100" />
+					<button type="submit">검색하기</button>
+				</form>
+			</div>	
+		</div>
+	<div class="map_wrap" >
 		<div id="map"
-			style="display:block;margin:0 auto; width: 60%; height: 99%; position: relative; overflow: hidden;"></div>
+			style="display: block; margin: 0 auto; width: 60%; height: 99%; position: relative; overflow: hidden;"></div>
 
 		<!-- 지도타입 컨트롤 div 입니다 -->
 		<div class="custom_typecontrol radius_border">
@@ -35,35 +39,18 @@
 		</div>
 
 		<!-- 지도 확대, 축소 컨트롤 div 입니다 -->
-		<div class="custom_zoomcontrol radius_border" >
+		<div class="custom_zoomcontrol radius_border">
 			<span onclick="zoomIn()"><img
 				src="http://i1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_plus.png"
 				alt="확대"></span> <span onclick="zoomOut()"><img
 				src="http://i1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png"
 				alt="축소"></span>
 		</div>
-
-		<div id="menu_wrap"  class="bg_white">
-			<div class="option">
-				<form onsubmit="searchPlaces(); return false">
-					<span>지역명:</span> <input type="text" value=" ex) 서울" id="keyword"
-						size="15" />
-					<button type="submit">검색하기</button>
-				</form>
-			</div>
+	</div>
+	<div id="menu_wrap" class="bg_white">		
 			<hr />
 			<ul id="placesList"></ul>
 			<div id="pagination"></div>
-		</div>
-	</div>
-		<div id="menu_wrap2" style="display:block;margin:0 auto; width: 60%; height: 30%;"  class="bg_white">
-			<div class="option">
-				<form onsubmit="searchPlaces2(); return false">
-				<span>지역명:</span> <input type="text" value=" ex) 서울" id="keyword"
-						size="15" />
-					<button type="submit">검색하기</button>
-					</form>
-		</div>	
-	
+   </div>
 </body>
 </html>

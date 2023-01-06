@@ -32,20 +32,22 @@
 	width: 100%;
 	height: 500px;
 }
-
+/* 리스트*/
 #menu_wrap {
-	position: absolute;
-	top: 0;
-	left: 20%;
+	position: relative;
 	bottom: 0;
-	width: 250px;
-	margin: 10px 0 30px 10px;
+	margin: 10px auto 30px;
 	padding: 5px;
 	overflow-y: auto;
 	background: rgba(255, 255, 255, 0.7);
 	z-index: 1;
 	font-size: 12px;
-	border-radius: 10px;
+	border-radius: 30px;
+	
+	width : 60%;
+	height : auto;
+	background-color: White;
+  	border: 1px solid black ;
 }
 
 .bg_white {
@@ -60,7 +62,7 @@
 	margin: 3px 0;
 }
 
-#menu_wrap .option {
+/*#menu_wrap .option {
 	text-align: center;
 }
 
@@ -70,42 +72,7 @@
 
 #menu_wrap .option button {
 	margin-left: 5px;
-}
-
-#menu_wrap2 {
-	position: absolute;
-	bottom :10px;
-	left : 50px;
-	width : 500%
-	margin: 10px 0 30px 10px;
-	padding: 5px;
-	overflow-y: auto;
-	background: rgba(255, 255, 255, 0.7);
-	z-index: 1;
-	font-size: 12px;
-	border-radius: 10px;
-}
-
-#menu_wrap2 hr {
-	display: block;
-	height: 1px;
-	border: 0;
-	border-top: 2px solid #5F5F5F;
-	margin: 3px 0;
-}
-
-#menu_wrap2 .option {
-	text-align: center;
-}
-
-#menu_wrap2 .option p {
-	margin: 10px 0;
-}
-
-#menu_wrap2 .option button {
-	margin-left: 5px;
-}
-
+}*/
 #placesList li {
 	list-style: none;
 }
@@ -239,6 +206,8 @@
 	color: #777;
 }
 
+
+
 /*  줌인 스카이 변환 css */
 html, body {
 	width: 100%;
@@ -331,4 +300,16 @@ html, body {
 
 .custom_zoomcontrol span:first-child {
 	border-bottom: 1px solid #bfbfbf;
+}
+#option {
+	text-align: center;
+}
+#option p {
+	margin: 10px 0;
+}
+
+#option button {
+	margin-left: 5px;
+	width: 90px;
+	height: 50px;
 }

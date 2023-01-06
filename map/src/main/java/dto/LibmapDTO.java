@@ -14,6 +14,8 @@ public class LibmapDTO {
 	private String road_name;
 	private String latitude;
 	private String longitude;
+	private String foodstroe_num;
+	private String img_url;
 
 	public LibmapDTO() {
 		// TODO Auto-generated constructor stub
@@ -115,4 +117,20 @@ public class LibmapDTO {
 		this.longitude = longitude;
 	}
 
+	public String getFoodstroe_num() {
+		return foodstroe_num;
+	}
+
+	public void setFoodstroe_num(String foodstroe_num) {
+		this.foodstroe_num = foodstroe_num;
+	}
+
+	public String getImg_url() {
+		return img_url;
+	}
+
+	public void setImg_url(String img_url) {
+		this.img_url = img_url;
+	}
+	
 }
