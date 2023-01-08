@@ -221,6 +221,8 @@ function getListItem(index, search, marker) {
 
 			
 	itemStr += '<span class="typ">' +search.foodstroe_num + '</span>'
+	
+	itemStr += '<span class= "typ">' +'<img src = searchs.img_url style="float:right">'
 			+ '</div>';
 	
 	el.innerHTML = itemStr;
@@ -301,10 +303,10 @@ function displayPagination(totalPage, total, blocksize, pageNo) {
 function displayInfowindow(marker, title, searchs) {
 
 	
-	var content = '<div class ="f_main"><div id="f_date">' + '<img src =' + `${searchs.img_url}` +' enctype="multipart/form-data" width=50>' +'</div>'
-			+ '<div class="f_header">' + searchs.foodstore_id
-			+ '</div>' + '<div id="f_date">' + searchs.foodcategory
-			+ '</div>' + '<div id="f_date">' + searchs.foodstroe_num
+	var content = '<div class ="f_main"><div id="f_date">' + '<img src =' + `${searchs.img_url}` +' enctype="multipart/form-data" width=50 style="float:left">' +'</div>'
+			+ '<div class="f_header" style="text-align:right">' + searchs.foodstore_id
+			+ '</div>' + '<div id="f_date" style="text-align:right">' + searchs.foodcategory
+			+ '</div>' + '<div id="f_date" style="text-align:right">' + searchs.foodstroe_num
 			+ '</div>' + '<div id="f_number">'
 			+ searchs.address + '</div></div>'; 
 
