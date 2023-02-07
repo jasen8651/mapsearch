@@ -13,7 +13,7 @@ import service.LibService;
 
 
 // http://localhost:8090/myapp/map.do
-
+///////////////////
 @Controller
 public class MapController {
 	private LibService service;
